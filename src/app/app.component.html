@@ -1,0 +1,3 @@
+<ng-container *ngIf="flag"><app-image *ngFor="let url of images; let i = index" [url] = url [i]="i"></app-image></ng-container>
+
+<button  (click)="flag = !flag">show/hide</button>
